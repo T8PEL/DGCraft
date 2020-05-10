@@ -15,8 +15,7 @@ import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("dangancraft")
-public class DanganCraft
-{
+public class DanganCraft {
     private static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "dangancraft";
 
@@ -29,23 +28,25 @@ public class DanganCraft
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void setup(final FMLCommonSetupEvent event) { }
+    private void setup(final FMLCommonSetupEvent event) {
+    }
 
-    private void doClientStuff(final FMLClientSetupEvent event) { }
+    private void doClientStuff(final FMLClientSetupEvent event) {
+    }
 
-    public static final ItemGroup TAB_ITEMS = new ItemGroup("dangantab"){
+    public static final ItemGroup TAB_ITEMS = new ItemGroup("dangantab") {
 
         @Override
         public ItemStack createIcon() {
             return new ItemStack(RegistryHandler.MONORITE.get());
-    }
+        }
 
-};
-    public static final ItemGroup TAB_BLOCKS = new ItemGroup("dangantabblocks"){
+    };
+    public static final ItemGroup TAB_BLOCKS = new ItemGroup("dangantabblocks") {
 
         @Override
         public ItemStack createIcon() {
             return new ItemStack(RegistryHandler.DESPAIR_DIRT_BLOCK.get());
         }
-};
+    };
 }

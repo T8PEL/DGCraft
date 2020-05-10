@@ -11,10 +11,10 @@ public class MonoriteOreBlock extends Block {
         super(Block.Properties.create(Material.IRON)
             .hardnessAndResistance(5.0f,6.0f)
             .harvestLevel(2)
-            .doesNotBlockMovement()
             .lightValue(4)
             .sound(SoundType.METAL)
             .harvestTool(ToolType.PICKAXE)
+
 
         );
     }
