@@ -5,8 +5,10 @@ import com.t8pelway.dangancraft.blocks.BlockItemBase;
 import com.t8pelway.dangancraft.blocks.DespairDirtBlock;
 import com.t8pelway.dangancraft.blocks.MonoriteOreBlock;
 import com.t8pelway.dangancraft.items.ItemBase;
+import com.t8pelway.dangancraft.items.Monorite_Pickaxe;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.PickaxeItem;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -26,7 +28,7 @@ public class RegistryHandler {
     }
     //Items
     public static final RegistryObject<Item> MONORITE = ITEMS.register("monorite", ItemBase::new);
-    public static final RegistryObject<Item> MONORITE_PICKAXE = ITEMS.register("monorite_pickaxe", ItemBase::new);
+    public static final RegistryObject<Item> MONORITE_PICKAXE = ITEMS.register("monorite_pickaxe", Monorite_Pickaxe::new);
     public static final RegistryObject<Item> GUNGNIR_SPEAR = ITEMS.register("gungnir_spear", ItemBase::new);
 
     //Armor
