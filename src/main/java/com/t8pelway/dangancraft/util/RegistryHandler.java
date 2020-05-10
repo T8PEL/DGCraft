@@ -34,7 +34,7 @@ public class RegistryHandler {
     public static final RegistryObject<Item> MONORITE_BOOTS = ITEMS.register("monorite_boots", ItemBase::new);
 
     //Blocks
-    //public static final RegistryObject<Block> MONORITE_ORE_BLOCK = BLOCKS.register("monorite_ore_block", MonoriteOreBlock::new);
+    public static final RegistryObject<Block> MONORITE_ORE_BLOCK = BLOCKS.register("monorite_ore_block", MonoriteOreBlock::new);
 
 
 
