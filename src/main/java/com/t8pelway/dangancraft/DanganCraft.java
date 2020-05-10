@@ -33,11 +33,19 @@ public class DanganCraft
 
     private void doClientStuff(final FMLClientSetupEvent event) { }
 
-    public static final ItemGroup TAB = new ItemGroup("dangantab"){
+    public static final ItemGroup TAB_ITEMS = new ItemGroup("dangantab"){
 
         @Override
         public ItemStack createIcon() {
             return new ItemStack(RegistryHandler.MONORITE.get());
     }
+
+};
+    public static final ItemGroup TAB_BLOCKS = new ItemGroup("dangantabblocks"){
+
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(RegistryHandler.DESPAIR_DIRT_BLOCK.get());
+        }
 };
 }
