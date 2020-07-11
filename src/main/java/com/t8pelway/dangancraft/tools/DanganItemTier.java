@@ -1,6 +1,6 @@
 package com.t8pelway.dangancraft.tools;
 
-import com.t8pelway.dangancraft.util.RegistryHandler;
+import com.t8pelway.dangancraft.util.RegistryHandlerItems;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 
@@ -9,13 +9,13 @@ import java.util.function.Supplier;
 public enum DanganItemTier implements IItemTier {
 
     MONORITE(2, 450, 7.0F, 2.0F, 12, () -> {
-        return Ingredient.fromItems(RegistryHandler.MONORITE.get());
+        return Ingredient.fromItems(RegistryHandlerItems.MONORITE.get());
     }),
     HOPE(3, 1000, 9.0F, 3.0F, 15, () -> {
-        return Ingredient.fromItems(RegistryHandler.HOPE_FRAGMENT.get());
+        return Ingredient.fromItems(RegistryHandlerItems.HOPE_FRAGMENT.get());
     }),
     DESPAIR(3, 1800, 8.0F, 4.5F, 15, () ->{
-        return Ingredient.fromItems(RegistryHandler.DESPAIR_SHARD.get());
+        return Ingredient.fromItems(RegistryHandlerItems.DESPAIR_SHARD.get());
     }),
     TONYEE(4, 3500,10.0F,5.0F,20, null);
 

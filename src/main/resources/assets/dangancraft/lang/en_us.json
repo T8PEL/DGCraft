@@ -12,8 +12,9 @@
 
 
 
-  "itemGroup.dangantabblocks": "Test",
-  "itemGroup.dangantab": "DanganCraft Items"
+  "itemGroup.dangan_tab_blocks": "DanganCraft Blocks",
+  "itemGroup.dangan_tab_items": "DanganCraft Items",
+  "itemGroup.dangan_tab_armor": "DanganCraft Armor"
 
 
 }
