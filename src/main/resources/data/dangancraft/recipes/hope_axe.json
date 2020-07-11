@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " XX",
+    " YX",
+    " Y "
+  ],
+  "key":
+  {
+    "X":
+    {
+      "item": "dangancraft:hope_fragment"
+    },
+    "Y":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "dangancraft:hope_axe",
+    "count": 1
+  }
+}

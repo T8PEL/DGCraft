@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " XX",
+    " YX",
+    " Y "
+  ],
+  "key":
+  {
+    "X":
+    {
+      "item": "dangancraft:despair_shard"
+    },
+    "Y":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "dangancraft:despair_axe",
+    "count": 1
+  }
+}

@@ -1,5 +1,6 @@
 package com.t8pelway.dangancraft;
 
+import com.t8pelway.dangancraft.util.RegistryHandlerHD;
 import com.t8pelway.dangancraft.util.RegistryHandlerItems;
 import com.t8pelway.dangancraft.util.RegistryHandlerMonorite;
 import net.minecraft.item.ItemGroup;
@@ -23,6 +24,8 @@ public class DanganCraft {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
         RegistryHandlerItems.init();
+        RegistryHandlerMonorite.init();
+        RegistryHandlerHD.init();
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -51,8 +54,6 @@ public class DanganCraft {
     public static final ItemGroup TAB_ARMOR = new ItemGroup("dangan_tab_armor") {
 
         @Override
-        public ItemStack createIcon() {
-            return new ItemStack(RegistryHandlerMonorite.MONORITE_CHESTPLATE.get());
-        }
+        public ItemStack createIcon() { return new ItemStack(RegistryHandlerMonorite.MONORITE_CHESTPLATE.get()); }
     };
 }

@@ -9,7 +9,7 @@ issueTrackerURL="http://my.issue.tracker/" #optional
 
 modId="dangancraft" #mandatory
 
-version="1.15.2-1.0.0" #mandatory
+version="1.15.2-0.0.1" #mandatory
 
 displayName="DanganCraft" #mandatory
 
@@ -21,7 +21,7 @@ logoFile="examplemod.png" #optional
 
 credits="Thanks for this example mod goes to Java and TechnoVision" #optional
 
-authors="T8PElway" #optional
+authors="T8PElway, textures by RainingJupiter" #optional
 
 description='''
 Bringing some elements of Danganronpa to Minecraft!

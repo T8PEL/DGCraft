@@ -24,12 +24,14 @@ public class RegistryHandlerHD {
             new SwordItem(DanganItemMaterial.HOPE, 5, -2.0F, new Item.Properties().group(DanganCraft.TAB_ITEMS)));
     public static final RegistryObject<SwordItem> HOPE_GAVEL = ITEMS.register("hope_gavel",()->
             new SwordItem(DanganItemMaterial.HOPE, 7,0.0F,new Item.Properties().group(DanganCraft.TAB_ITEMS)));
-    public static final RegistryObject<PickaxeItem> HOPE_PICK = ITEMS.register("hope_pick", () ->
+    public static final RegistryObject<PickaxeItem> HOPE_PICKAXE = ITEMS.register("hope_pickaxe", () ->
             new PickaxeItem(DanganItemMaterial.HOPE, 0, -5.0F, new Item.Properties().group(DanganCraft.TAB_ITEMS)));
     public static final RegistryObject<AxeItem> HOPE_AXE = ITEMS.register("hope_axe", () ->
             new AxeItem(DanganItemMaterial.HOPE, 7, -4.0F, new Item.Properties().group(DanganCraft.TAB_ITEMS)));
     public static final RegistryObject<ShovelItem> HOPE_SHOVEL = ITEMS.register("hope_shovel", () ->
             new ShovelItem(DanganItemMaterial.HOPE, 0, -5.0F, new Item.Properties().group(DanganCraft.TAB_ITEMS)));
+    public static final RegistryObject<HoeItem> HOPE_HOE = ITEMS.register("hope_hoe", ()->
+            new HoeItem(DanganItemMaterial.HOPE,-1.0F, new Item.Properties().group(DanganCraft.TAB_ITEMS)));
     //Hope Armor
     public static final RegistryObject<ArmorItem> HOPE_HELMET = ITEMS.register("hope_helm", ()->
             new ArmorItem(DanganArmorMaterial.HOPE, EquipmentSlotType.HEAD, new Item.Properties().group(DanganCraft.TAB_ARMOR)));
@@ -45,12 +47,14 @@ public class RegistryHandlerHD {
             new SwordItem(DanganItemMaterial.DESPAIR, 5, -2.0F, new Item.Properties().group(DanganCraft.TAB_ITEMS)));
     public static final RegistryObject<SwordItem> DESPAIR_GAVEL = ITEMS.register("despair_gavel",()->
             new SwordItem(DanganItemMaterial.DESPAIR, 7,0.0F,new Item.Properties().group(DanganCraft.TAB_ITEMS)));
-    public static final RegistryObject<PickaxeItem> DESPAIR_PICK = ITEMS.register("despair_pick", () ->
+    public static final RegistryObject<PickaxeItem> DESPAIR_PICKAXE = ITEMS.register("despair_pickaxe", () ->
             new PickaxeItem(DanganItemMaterial.DESPAIR, 0, -5.0F, new Item.Properties().group(DanganCraft.TAB_ITEMS)));
     public static final RegistryObject<AxeItem> DESPAIR_AXE = ITEMS.register("despair_axe", () ->
             new AxeItem(DanganItemMaterial.DESPAIR, 7, -4.0F, new Item.Properties().group(DanganCraft.TAB_ITEMS)));
     public static final RegistryObject<ShovelItem> DESPAIR_SHOVEL = ITEMS.register("despair_shovel", () ->
             new ShovelItem(DanganItemMaterial.DESPAIR, 0, -5.0F, new Item.Properties().group(DanganCraft.TAB_ITEMS)));
+    public static final RegistryObject<HoeItem> DESPAIR_HOE = ITEMS.register("despair_hoe",()->
+            new HoeItem(DanganItemMaterial.DESPAIR,-1.0F,new Item.Properties().group(DanganCraft.TAB_ITEMS)));
     //Despair Armor
     public static final RegistryObject<ArmorItem> DESPAIR_HELM = ITEMS.register("despair_helm",()->
             new ArmorItem(DanganArmorMaterial.DESPAIR, EquipmentSlotType.HEAD, new Item.Properties().group(DanganCraft.TAB_ARMOR)));

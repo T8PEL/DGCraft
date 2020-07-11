@@ -24,12 +24,14 @@ public class RegistryHandlerMonorite {
             new SwordItem(DanganItemMaterial.MONORITE, 4, -2.6F, new Item.Properties().group(DanganCraft.TAB_ITEMS)));
     public static final RegistryObject<SwordItem> MONORITE_GAVEL = ITEMS.register("monorite_gavel", ()->
             new SwordItem(DanganItemMaterial.MONORITE, 5,0.0F, new Item.Properties().group(DanganCraft.TAB_ITEMS)));
-    public static final RegistryObject<PickaxeItem> MONORITE_PICK = ITEMS.register("monorite_pickaxe", ()->
+    public static final RegistryObject<PickaxeItem> MONORITE_PICKAXE = ITEMS.register("monorite_pickaxe", ()->
             new PickaxeItem(DanganItemMaterial.MONORITE,0, -3.0F, new Item.Properties().group(DanganCraft.TAB_ITEMS)));
     public static final RegistryObject<AxeItem> MONORITE_AXE = ITEMS.register("monorite_axe", () ->
             new AxeItem(DanganItemMaterial.MONORITE, 5, -4.5F, new Item.Properties().group(DanganCraft.TAB_ITEMS)));
     public static final RegistryObject<ShovelItem> MONORITE_SHOVEL = ITEMS.register("monorite_shovel", () ->
             new ShovelItem(DanganItemMaterial.MONORITE, 0,0, new Item.Properties().group(DanganCraft.TAB_ITEMS)));
+    public static final RegistryObject<HoeItem> MONORITE_HOE = ITEMS.register("monorite_hoe",()->
+            new HoeItem(DanganItemMaterial.MONORITE,-1.0F,new Item.Properties().group(DanganCraft.TAB_ITEMS)));
     //Armor
     public static final RegistryObject<ArmorItem> MONORITE_HELMET = ITEMS.register("monorite_helm", ()->
             new ArmorItem(DanganArmorMaterial.MONORITE, EquipmentSlotType.HEAD, new Item.Properties().group(DanganCraft.TAB_ARMOR)));
