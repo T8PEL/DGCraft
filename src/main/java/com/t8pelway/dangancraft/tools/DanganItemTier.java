@@ -16,7 +16,8 @@ public enum DanganItemTier implements IItemTier {
     }),
     DESPAIR(3, 1800, 8.0F, 4.5F, 15, () ->{
         return Ingredient.fromItems(RegistryHandler.DESPAIR_SHARD.get());
-    });
+    }),
+    TONYEE(4, 3500,10.0F,5.0F,20, null);
 
     private final int harvestLevel;
     private final int maxUses;
