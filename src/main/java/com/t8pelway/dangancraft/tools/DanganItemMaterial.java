@@ -6,7 +6,7 @@ import net.minecraft.item.crafting.Ingredient;
 
 import java.util.function.Supplier;
 
-public enum DanganItemTier implements IItemTier {
+public enum DanganItemMaterial implements IItemTier {
 
     MONORITE(2, 450, 7.0F, 2.0F, 12, () -> {
         return Ingredient.fromItems(RegistryHandlerItems.MONORITE.get());
@@ -26,7 +26,7 @@ public enum DanganItemTier implements IItemTier {
     private final int enchantability;
     private final Supplier<Ingredient> repairMaterial;
 
-    DanganItemTier(int harvestLevel, int maxUses, float effciency, float attackDamage, int enchantability, Supplier<Ingredient> repairMaterial){
+    DanganItemMaterial(int harvestLevel, int maxUses, float effciency, float attackDamage, int enchantability, Supplier<Ingredient> repairMaterial){
         this.harvestLevel = harvestLevel;
         this.maxUses = maxUses;
         this.effciency = effciency;

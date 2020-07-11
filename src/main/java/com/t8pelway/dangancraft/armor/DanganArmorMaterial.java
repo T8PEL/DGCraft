@@ -12,10 +12,17 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 import java.util.function.Supplier;
 
-public enum ModArmorMaterial implements IArmorMaterial {
+public enum DanganArmorMaterial implements IArmorMaterial {
 
-    MONORITE(DanganCraft.MOD_ID + ":monorite", 30, new int[] { 3,6,7,3 }, 20,
-            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1.5F, () -> { return Ingredient.fromItems(RegistryHandlerItems.MONORITE.get()); });
+    MONORITE(DanganCraft.MOD_ID + ":monorite", 30, new int[] { 3,6,7,3 }, 20, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1.5F, () ->
+    { return Ingredient.fromItems(RegistryHandlerItems.MONORITE.get()); }),
+    HOPE(DanganCraft.MOD_ID + ":hope", 40, new int[] { 3,6,7,3 }, 22, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0F, () ->
+    { return Ingredient.fromItems(RegistryHandlerItems.HOPE_FRAGMENT.get()); }),
+    DESPAIR(DanganCraft.MOD_ID + ":hope", 40, new int[] { 3,6,7,3 }, 22, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0F, () ->
+    { return Ingredient.fromItems(RegistryHandlerItems.HOPE_FRAGMENT.get()); });
+
+
+
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[] {11, 16, 15, 13};
     private final String name;
@@ -26,7 +33,7 @@ public enum ModArmorMaterial implements IArmorMaterial {
     private final float toughness;
     private final Supplier<Ingredient> repairMaterial;
 
-    ModArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmtArray, int enchantability, SoundEvent soundEvent, float toughness, Supplier<Ingredient> repairMaterial){
+    DanganArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmtArray, int enchantability, SoundEvent soundEvent, float toughness, Supplier<Ingredient> repairMaterial){
         this.name = name;
         this.maxDamageFactor = maxDamageFactor;
         this.damageReductionAmtArray = damageReductionAmtArray;
