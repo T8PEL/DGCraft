@@ -14,7 +14,7 @@ public class RegistryHandlerHD {
 
     public static final String MOD_ID = DanganCraft.MOD_ID;
 
-    public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MOD_ID);
 
     public static void init(){
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
@@ -31,7 +31,7 @@ public class RegistryHandlerHD {
     public static final RegistryObject<ShovelItem> HOPE_SHOVEL = ITEMS.register("hope_shovel", () ->
             new ShovelItem(DanganItemMaterial.HOPE, 0, -5.0F, new Item.Properties().group(DanganCraft.TAB_ITEMS)));
     public static final RegistryObject<HoeItem> HOPE_HOE = ITEMS.register("hope_hoe", ()->
-            new HoeItem(DanganItemMaterial.HOPE,-1.0F, new Item.Properties().group(DanganCraft.TAB_ITEMS)));
+            new HoeItem(DanganItemMaterial.HOPE,-3,-1.0F, new Item.Properties().group(DanganCraft.TAB_ITEMS)));
     //Hope Armor
     public static final RegistryObject<ArmorItem> HOPE_HELMET = ITEMS.register("hope_helm", ()->
             new ArmorItem(DanganArmorMaterial.HOPE, EquipmentSlotType.HEAD, new Item.Properties().group(DanganCraft.TAB_ARMOR)));
@@ -54,7 +54,7 @@ public class RegistryHandlerHD {
     public static final RegistryObject<ShovelItem> DESPAIR_SHOVEL = ITEMS.register("despair_shovel", () ->
             new ShovelItem(DanganItemMaterial.DESPAIR, 0, -5.0F, new Item.Properties().group(DanganCraft.TAB_ITEMS)));
     public static final RegistryObject<HoeItem> DESPAIR_HOE = ITEMS.register("despair_hoe",()->
-            new HoeItem(DanganItemMaterial.DESPAIR,-1.0F,new Item.Properties().group(DanganCraft.TAB_ITEMS)));
+            new HoeItem(DanganItemMaterial.DESPAIR,-3,-1.0F,new Item.Properties().group(DanganCraft.TAB_ITEMS)));
     //Despair Armor
     public static final RegistryObject<ArmorItem> DESPAIR_HELM = ITEMS.register("despair_helm",()->
             new ArmorItem(DanganArmorMaterial.DESPAIR, EquipmentSlotType.HEAD, new Item.Properties().group(DanganCraft.TAB_ARMOR)));

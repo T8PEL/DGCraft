@@ -3,23 +3,19 @@
   "pattern":
   [
     "XXX",
-    " Y ",
-    " Y "
+    "X X",
+    "   "
   ],
   "key":
   {
     "X":
     {
       "item": "dangancraft:monorite"
-    },
-    "Y":
-    {
-      "item": "minecraft:stick"
     }
   },
   "result":
   {
-    "item": "dangancraft:monorite_pickaxe",
+    "item": "dangancraft:monorite_helm",
     "count": 1
   }
 }

@@ -15,11 +15,11 @@ import java.util.function.Supplier;
 public enum DanganArmorMaterial implements IArmorMaterial {
 
     MONORITE(DanganCraft.MOD_ID + ":monorite", 30, new int[] { 3,6,7,3 }, 20, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1.5F, () ->
-    { return Ingredient.fromItems(RegistryHandlerItems.MONORITE.get()); }),
+    { return Ingredient.fromItems(RegistryHandlerItems.MONORITE.get()); },0.0F),
     HOPE(DanganCraft.MOD_ID + ":hope", 40, new int[] { 3,6,7,3 }, 22, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0F, () ->
-    { return Ingredient.fromItems(RegistryHandlerItems.HOPE_FRAGMENT.get()); }),
+    { return Ingredient.fromItems(RegistryHandlerItems.HOPE_FRAGMENT.get()); },0.0F),
     DESPAIR(DanganCraft.MOD_ID + ":hope", 40, new int[] { 3,6,7,3 }, 22, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0F, () ->
-    { return Ingredient.fromItems(RegistryHandlerItems.HOPE_FRAGMENT.get()); });
+    { return Ingredient.fromItems(RegistryHandlerItems.HOPE_FRAGMENT.get()); },0.0F);
 
 
 
@@ -32,8 +32,10 @@ public enum DanganArmorMaterial implements IArmorMaterial {
     private final SoundEvent soundEvent;
     private final float toughness;
     private final Supplier<Ingredient> repairMaterial;
+    private float knockbackResistance;
 
-    DanganArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmtArray, int enchantability, SoundEvent soundEvent, float toughness, Supplier<Ingredient> repairMaterial){
+    DanganArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmtArray, int enchantability, SoundEvent soundEvent,
+                        float toughness, Supplier<Ingredient> repairMaterial, float knockbackResistance){
         this.name = name;
         this.maxDamageFactor = maxDamageFactor;
         this.damageReductionAmtArray = damageReductionAmtArray;
@@ -41,6 +43,7 @@ public enum DanganArmorMaterial implements IArmorMaterial {
         this.soundEvent = soundEvent;
         this.toughness = toughness;
         this.repairMaterial = repairMaterial;
+        this.knockbackResistance = knockbackResistance;
     }
 
     @Override
@@ -76,5 +79,10 @@ public enum DanganArmorMaterial implements IArmorMaterial {
     @Override
     public float getToughness() {
         return this.toughness;
+    }
+
+    @Override
+    public float func_230304_f_() {
+        return this.knockbackResistance;
     }
 }

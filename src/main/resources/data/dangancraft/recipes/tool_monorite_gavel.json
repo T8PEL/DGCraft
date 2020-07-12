@@ -3,7 +3,7 @@
   "pattern":
   [
     "XXX",
-    " Y ",
+    "XYX",
     " Y "
   ],
   "key":
@@ -19,7 +19,7 @@
   },
   "result":
   {
-    "item": "dangancraft:monorite_pickaxe",
+    "item": "dangancraft:monorite_helm",
     "count": 1
   }
 }

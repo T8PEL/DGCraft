@@ -14,7 +14,7 @@ public class RegistryHandlerMonorite {
 
     public static final String MOD_ID = DanganCraft.MOD_ID;
 
-    public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MOD_ID);
 
     public static void init(){
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
@@ -31,7 +31,7 @@ public class RegistryHandlerMonorite {
     public static final RegistryObject<ShovelItem> MONORITE_SHOVEL = ITEMS.register("monorite_shovel", () ->
             new ShovelItem(DanganItemMaterial.MONORITE, 0,0, new Item.Properties().group(DanganCraft.TAB_ITEMS)));
     public static final RegistryObject<HoeItem> MONORITE_HOE = ITEMS.register("monorite_hoe",()->
-            new HoeItem(DanganItemMaterial.MONORITE,-1.0F,new Item.Properties().group(DanganCraft.TAB_ITEMS)));
+            new HoeItem(DanganItemMaterial.MONORITE,-3,-1.0F,new Item.Properties().group(DanganCraft.TAB_ITEMS)));
     //Armor
     public static final RegistryObject<ArmorItem> MONORITE_HELMET = ITEMS.register("monorite_helm", ()->
             new ArmorItem(DanganArmorMaterial.MONORITE, EquipmentSlotType.HEAD, new Item.Properties().group(DanganCraft.TAB_ARMOR)));

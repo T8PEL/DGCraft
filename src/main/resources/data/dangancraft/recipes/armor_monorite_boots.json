@@ -2,24 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "pattern":
   [
-    "XXX",
-    " Y ",
-    " Y "
+    "X X",
+    "X X",
+    "   "
   ],
   "key":
   {
     "X":
     {
       "item": "dangancraft:monorite"
-    },
-    "Y":
-    {
-      "item": "minecraft:stick"
     }
   },
   "result":
   {
-    "item": "dangancraft:monorite_pickaxe",
+    "item": "dangancraft:monorite_boots",
     "count": 1
   }
 }
