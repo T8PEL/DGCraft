@@ -42,4 +42,8 @@ public class RegistryHandlerMonorite {
     public static final RegistryObject<ArmorItem> MONORITE_BOOTS = ITEMS.register("monorite_boots", ()->
             new ArmorItem(DanganArmorMaterial.MONORITE, EquipmentSlotType.FEET, new Item.Properties().group(DanganCraft.TAB_ARMOR)));
 
+    //enhanced Monorite Armor
+    public static final RegistryObject<ArmorItem> ENHANCED_MONORITE_HELMET = ITEMS.register("enhanced_monorite_helm", ()->
+            new ArmorItem(DanganArmorMaterial.ENHANCED_MONORITE, EquipmentSlotType.HEAD, new Item.Properties().group(DanganCraft.TAB_ARMOR)));
+
 }

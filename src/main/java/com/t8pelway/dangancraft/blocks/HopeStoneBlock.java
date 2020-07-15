@@ -4,12 +4,10 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.common.ToolType;
 
-public class DespairDirtBlock extends Block {
-    public DespairDirtBlock() {
+public class HopeStoneBlock extends Block {
+    public HopeStoneBlock() {
         super(Block.Properties.create(Material.EARTH)
-        .harvestTool(ToolType.SHOVEL)
-        .hardnessAndResistance(2.0f,1.0f)
-
+        .harvestTool(ToolType.PICKAXE)
 
 
         );

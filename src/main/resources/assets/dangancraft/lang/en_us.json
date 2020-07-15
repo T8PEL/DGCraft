@@ -3,14 +3,16 @@
   "item.dangancraft.monorite_pickaxe": "Monorite Pickaxe",
   "item.dangancraft.gungnir_spear": "Spears of Gungnir",
   "item.dangancraft.monorite_helm": "Monorite Helmet",
+  "item.dangancraft.enhanced_monorite": "Enhanced Monorite",
+  "item.dangancraft.cardboard_sword_craft": "Cardboard Sword",
+  "item.dangancraft.cardboard_sword_dungeon": "Cardboard Sword",
   "item.dangancraft.monorite_chestplate": "Monorite Chestplate",
   "item.dangancraft.monorite_pants": "Monorite Leggings",
   "item.dangancraft.monorite_boots": "Monorite Boots",
   "item.dangancraft.monorite_sword": "Monorite Sword",
+
   "block.dangancraft.monorite_ore_block": "Monorite Ore",
   "block.dangancraft.despair_dirt_block": "Dirt of Despair",
-
-
 
   "itemGroup.dangan_tab_blocks": "DanganCraft Blocks",
   "itemGroup.dangan_tab_items": "DanganCraft Items",

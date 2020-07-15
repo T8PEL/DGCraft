@@ -16,10 +16,12 @@ public enum DanganArmorMaterial implements IArmorMaterial {
 
     MONORITE(DanganCraft.MOD_ID + ":monorite", 30, new int[] { 3,6,7,3 }, 20, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1.5F, () ->
     { return Ingredient.fromItems(RegistryHandlerItems.MONORITE.get()); },0.0F),
+    ENHANCED_MONORITE(DanganCraft.MOD_ID + ":enhanced_monorite",45, new int[]{3,6,7,3}, 22, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.5F,()->
+    {return Ingredient.fromItems(RegistryHandlerItems.ENHANCED_MONORITE.get()); }, 0.5F),
     HOPE(DanganCraft.MOD_ID + ":hope", 40, new int[] { 3,6,7,3 }, 22, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0F, () ->
     { return Ingredient.fromItems(RegistryHandlerItems.HOPE_FRAGMENT.get()); },0.0F),
     DESPAIR(DanganCraft.MOD_ID + ":hope", 40, new int[] { 3,6,7,3 }, 22, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0F, () ->
-    { return Ingredient.fromItems(RegistryHandlerItems.HOPE_FRAGMENT.get()); },0.0F);
+    { return Ingredient.fromItems(RegistryHandlerItems.DESPAIR_SHARD.get()); },0.0F);
 
 
 
