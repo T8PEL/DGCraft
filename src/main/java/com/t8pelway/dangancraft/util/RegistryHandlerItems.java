@@ -28,8 +28,8 @@ public class RegistryHandlerItems {
     public static final RegistryObject<Item> DESPAIR_SHARD = ITEMS.register("despair_shard", ItemBase::new);
     public static final RegistryObject<Item> CARDBOARD = ITEMS.register("cardboard",ItemBase::new);
     //Dungeon Loot Items
-    //public static final RegistryObject<SwordItem> GUNGNIR_SPEAR = ITEMS.register("gungnir_spear", () ->
-     //       new SwordItem(DanganItemMaterial.DESPAIR, 8, -1.0F, new Item.Properties().group(DanganCraft.TAB_ITEMS).setNoRepair()));
+    public static final RegistryObject<SwordItem> GUNGNIR_SPEAR = ITEMS.register("gungnir_spear", () ->
+            new SwordItem(DanganItemMaterial.DESPAIR, 8, -1.0F, new Item.Properties().group(DanganCraft.TAB_ITEMS).setNoRepair()));
     //Tony's Tools, Not Yet Implamented due to reasons ;p
     public static final RegistryObject<SwordItem> CARDBOARD_SWORD_CRAFT = ITEMS.register("cardboard_sword_craft", () ->
           new SwordItem(DanganItemMaterial.TONYCRAFT, 10,0.0F, new Item.Properties().group(DanganCraft.TAB_ITEMS)));

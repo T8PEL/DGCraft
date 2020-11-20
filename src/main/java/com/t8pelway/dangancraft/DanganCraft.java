@@ -1,5 +1,6 @@
 package com.t8pelway.dangancraft;
 
+import com.t8pelway.dangancraft.util.RegistryHandlerBlocks;
 import com.t8pelway.dangancraft.util.RegistryHandlerHD;
 import com.t8pelway.dangancraft.util.RegistryHandlerItems;
 import com.t8pelway.dangancraft.util.RegistryHandlerMonorite;
@@ -26,6 +27,7 @@ public class DanganCraft {
         RegistryHandlerItems.init();
         RegistryHandlerMonorite.init();
         RegistryHandlerHD.init();
+        RegistryHandlerBlocks.init();
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -48,7 +50,7 @@ public class DanganCraft {
 
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(RegistryHandlerItems.DESPAIR_DIRT_BLOCK.get());
+            return new ItemStack(RegistryHandlerBlocks.DESPAIR_DIRT_BLOCK.get());
         }
     };
     public static final ItemGroup TAB_ARMOR = new ItemGroup("dangan_tab_armor") {
